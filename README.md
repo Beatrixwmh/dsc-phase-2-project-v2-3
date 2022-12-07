@@ -3,7 +3,7 @@
 ## Project Overview
 In this project, I attmepted to answer following question: What kind of house rennovations can home owners do to efficiently increase the predicted market price of their house?\
 In order to answer this question, I have analysed data relating to houses in King County in order to investigate the relationshop between various feature of a house-like the size of the living space, the architecture, and the qaultiy of the material used to build the house- and the price of the house. Through the methods of multiple linear regression, I have isloated three features that significantly impact the price, namely the living area, building condition, and building grade.\
-My three recommendations for home owners to maximize the predicted value of their houses through rennovations would be:
+My three recommendations for home owners to maximize the predicted value of their houses through rennovations would be:\
 **1. Try to increase living area by removing walls or adding rooms**\
 **2. Make sure the facitlies are well-maintained to increase building condition**\
 **3. Try to include custom designs or luxurious additions to the house to increase building grade**
@@ -36,7 +36,7 @@ Using the untransformed data, I then used train-test split 5 times to run a line
 The most significant variables were building grade, building conditon, and squarefoot living, their respective coefficient can be interpreted as:\
 **For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**\
 
-![condition](cond_ing.png)\
+![condition](cond_ind.png)\
 
 **For every unit increase in building grade, the price increases by an average of 106323.2 dollars.**\
 
@@ -65,7 +65,7 @@ Next step would be to investigate the outliers of the data set to see why there 
 and potentially discover more confounding variables that would help the model make better predictions. A good place to start would be to include the variables that were disregarded in this project to see if they can explain the ouliers better.
 
 ### For More Information 
-Please review our full analysis in [the github repository](./dsc-phase-2-project-v2-3) or my [presentation](./DS_Project2_Presentation.pdf).
+Please review our full analysis in [the github repository](./dsc-phase-2-project-v2-3) or my [presentation](./DS_Project2_Presentation.pdf).\
 For any additional questions, please contact **Beatrix Wong, beatrix.wmh@hotmail.com**
 
 ## Repository Structure
