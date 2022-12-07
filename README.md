@@ -33,7 +33,7 @@ Using the untransformed data, I then used train-test split 5 times to run a line
 
 ## Results
 The most significant variables were building grade, building conditon, and squarefoot living, their respective coefficient can be interpreted as:
-**For every unit increase in building condition, the price increases by an average of 59472.8 dollars.
+** For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**
 ![condition](cond_ing.png)
 For every unit increase in building grade, the price increases by an average of 106323.2 dollars.
 ![grade](grade_ind.png)
