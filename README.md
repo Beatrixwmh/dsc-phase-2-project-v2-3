@@ -22,7 +22,7 @@ Linear regression is appropriate for this analysis because it finds the average 
 To get to the model that best fits the data and thus has the highest predictive power, I used R squared- which measures the proportion of the variance of the dpenedent variable that is explained by the model-as a metirc to guage the fitness of the model, and I developed a simple baseline model to compare the more elaborate models to.
 #### The Baseline Model
 For the baseline model, I identified the variable that is the most strongly correlated to the price, whcih was squarefoot living area, and plotted a simple linear regression with just this variable. I obtained the R2 score by a 5-fold cross validation.\
-![Baseline](baseline.png)\
+![Baseline](baseline.png)
 
 Then, I divided the data into continuous variables and categorical variables. For the categorical variables, waterfront has binary values while the others (grade, condition, number of rooms) have multiple discrete numbers as values. I also observed that waterfront has null values. Upon close examination, I noticed the vast ,majority of the non-null values are 'NO', and decided to fill in the null values with the mode value for hihgher probability of accuracy without losing valuable indformation, which would happen if I were to drop the null rows.\
 Moreover, I converted the rest of the categorical values into the dtype float, then fitted a multiple linear regression model to the data. Using the same cross validation method, I took note of the R2 score, which was higher than that of the baseline, indicating an improvement. Moreover, according to the OLS model, all the coefficients were statistically significant, meaning they are very likely correlated due to cause and effect instead of by chance.
@@ -30,23 +30,17 @@ I then log transformed and normalised the continuous data so that the residuals 
 Then, I tried one-hot encoding the categorical variables instead of converting them into numberical data to see if the resulting model would yield a better R2 score, but it did not.\
 Finally, I looked at the correlation coefficients of all the variables to see if there is any strong colinearity, defined as having the correlation coefficient higher than or equal to 0.75, but there were not, so no further modifying was needed in that regard.\
 After experimenting with different models by transforming the data in various ways, I settled for the second model wih all the data as numerical values and untransformed, with an R2 score of 0.587.\
-Using the untransformed data, I then used train-test split 5 times to run a linear regression model, and the coefficients and final R2 score was obtained from the avergae of the 5 results. This was done as opposed to using the OLS model, which uses all the data as input, in order to avoid overfitting.
+Using the untransformed data, I then used train-test split 5 times to run a linear regression model, and the coefficients and final R2 score was obtained from the avergae of the 5 results. This was done as opposed to using the OLS model, which uses all the data as input, in order to avoid overfitting. 
 
 ## Results
 The most significant variables were building grade, building conditon, and squarefoot living, their respective coefficient can be interpreted as:\
-**For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**\
-
-![condition](cond_ind.png)\
-
-**For every unit increase in building grade, the price increases by an average of 106323.2 dollars.**\
-
-![grade](grade_ind.png)\
-
-**For every unit increase in squarefoot living area, the price increases by an average of 208.3 dollars.**\
-
-![living_area](sqft_living.png)\
-
-Keeping this in mind, homeowners may aim to increase these variables accordingly to maximize the predicted value of their houses.
+<p>**For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**</p>
+![condition](cond_ind.png)
+<p>**For every unit increase in building grade, the price increases by an average of 106323.2 dollars.**\</p>
+![grade](grade_ind.png)
+<p>**For every unit increase in squarefoot living area, the price increases by an average of 208.3 dollars.**</p>
+![living_area](sqft_living.png)
+<p>Keeping this in mind, homeowners may aim to increase these variables accordingly to maximize the predicted value of their houses.</p>
 
 ### Conclusion
 
@@ -61,7 +55,7 @@ Living area is the area of the house exlcuding the walls. When rennovating, livi
 ### Caveats
 According to the OLS model, the data has a significant degree of positive skewness and kurtosis, the former meaning the data is not normally distributed, with the median and mode higher than the mean, and the latter meaning there are many outliers that cannot be explained by the linear regression model.\
 Moreover, the data violates the two assumptions of linear regression- homoscedasticity and normality, which negatively impacts the reliability of the predictions.\
-Next step would be to investigate the outliers of the data set to see why there is such high kurtosis and skewedness,
+The Next step would be to investigate the outliers of the data set to see why there is such high kurtosis and skewedness,
 and potentially discover more confounding variables that would help the model make better predictions. A good place to start would be to include the variables that were disregarded in this project to see if they can explain the ouliers better.
 
 ### For More Information 
