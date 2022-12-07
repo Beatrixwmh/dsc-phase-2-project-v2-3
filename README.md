@@ -33,13 +33,20 @@ After experimenting with different models by transforming the data in various wa
 Using the untransformed data, I then used train-test split 5 times to run a linear regression model, and the coefficients and final R2 score was obtained from the avergae of the 5 results. This was done as opposed to using the OLS model, which uses all the data as input, in order to avoid overfitting. 
 
 ## Results
-The most significant variables were building grade, building conditon, and squarefoot living, their respective coefficient can be interpreted as:\
-<p>**For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**</p>
+The most significant variables were building grade, building conditon, and squarefoot living, their respective coefficient can be interpreted as:
+
+**For every unit increase in building condition, the price increases by an average of 59472.8 dollars.**
+
 ![condition](cond_ind.png)
-<p>**For every unit increase in building grade, the price increases by an average of 106323.2 dollars.**\</p>
+
+**For every unit increase in building grade, the price increases by an average of 106323.2 dollars.**
+
 ![grade](grade_ind.png)
-<p>**For every unit increase in squarefoot living area, the price increases by an average of 208.3 dollars.**</p>
+
+**For every unit increase in squarefoot living area, the price increases by an average of 208.3 dollars.**
+
 ![living_area](sqft_living.png)
+
 <p>Keeping this in mind, homeowners may aim to increase these variables accordingly to maximize the predicted value of their houses.</p>
 
 ### Conclusion
