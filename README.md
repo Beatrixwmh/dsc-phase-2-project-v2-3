@@ -1,7 +1,7 @@
-# How to increase house value via rennovation
+# How to increase house value via renovation
 
 ## Project Overview
-In this project, I attmepted to answer following question: What kind of house rennovations can home owners do to efficiently increase the predicted market price of their house?\
+In this project, I attmepted to answer following question: What kind of house renovations can home owners do to efficiently increase the predicted market price of their house?\
 In order to answer this question, I have analysed data relating to houses in King County in order to investigate the relationshop between various feature of a house-like the size of the living space, the architecture, and the qaultiy of the material used to build the house- and the price of the house. Through the methods of multiple linear regression, I have isloated three features that significantly impact the price, namely the living area, building condition, and building grade.\
 My three recommendations for home owners to maximize the predicted value of their houses through rennovations would be:\
 **1. Try to increase living area by removing walls or adding rooms**\
