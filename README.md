@@ -30,7 +30,8 @@ I then log transformed and normalised the continuous data so that the residuals 
 Then, I tried one-hot encoding the categorical variables instead of converting them into numberical data to see if the resulting model would yield a better R2 score, but it did not.\
 Finally, I looked at the correlation coefficients of all the variables to see if there is any strong colinearity, defined as having the correlation coefficient higher than or equal to 0.75, but there were not, so no further modifying was needed in that regard.\
 After experimenting with different models by transforming the data in various ways, I settled for the second model wih all the data as numerical values and untransformed, with an R2 score of 0.587.\
-Using the untransformed data, I then used train-test split 5 times to run a linear regression model, and the coefficients and final R2 score was obtained from the avergae of the 5 results. This was done as opposed to using the OLS model, which uses all the data as input, in order to avoid overfitting. 
+Using the untransformed data, I then used train-test split 5 times to run a linear regression model, and the coefficients and final R2 score was obtained from the avergae of the 5 results. This was done as opposed to using the OLS model, which uses all the data as input, in order to avoid overfitting. \
+I also checked for assumptions of linear regression by using histogramsn, QQ plots, and scatter plots.
 
 ## Results
 The OLS summary of the final model is as follows:
