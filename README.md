@@ -35,30 +35,30 @@ Using the untransformed data, I then used train-test split 5 times to run a line
 ## Results
 The OLS summary of the final model is as follows:
 
-OLS Regression Results
-Dep. Variable:	price	R-squared:	0.591
-Model:	OLS	Adj. R-squared:	0.591
-Method:	Least Squares	F-statistic:	3901.
-Date:	Wed, 07 Dec 2022	Prob (F-statistic):	0.00
-Time:	17:05:00	Log-Likelihood:	-2.9773e+05
-No. Observations:	21597	AIC:	5.955e+05
-Df Residuals:	21588	BIC:	5.956e+05
-Df Model:	8		
-Covariance Type:	nonrobust		
-coef	std err	t	P>|t|	[0.025	0.975]
-Intercept	-7.24e+05	1.76e+04	-41.090	0.000	-7.59e+05	-6.9e+05
-cond_ind	5.931e+04	2564.940	23.123	0.000	5.43e+04	6.43e+04
-grade_ind	1.061e+05	2272.473	46.677	0.000	1.02e+05	1.11e+05
-bedrooms	-3.866e+04	2201.663	-17.557	0.000	-4.3e+04	-3.43e+04
-bathrooms	-1.156e+04	3525.074	-3.280	0.001	-1.85e+04	-4653.839
-floors	-2.062e+04	3634.665	-5.674	0.000	-2.77e+04	-1.35e+04
-wtf_bin	8.186e+05	1.97e+04	41.579	0.000	7.8e+05	8.57e+05
-sqft_living	209.0878	3.498	59.766	0.000	202.231	215.945
-sqft_lot	-0.3323	0.039	-8.417	0.000	-0.410	-0.255
-Omnibus:	15280.876	Durbin-Watson:	1.981
-Prob(Omnibus):	0.000	Jarque-Bera (JB):	794926.842
-Skew:	2.837	Prob(JB):	0.00
-Kurtosis:	32.175	Cond. No.	5.43e+05
+OLS Regression Results\
+Dep. Variable:	price	R-squared:	0.591\
+Model:	OLS	Adj. R-squared:	0.591\
+Method:	Least Squares	F-statistic:	3901.\
+Date:	Wed, 07 Dec 2022	Prob (F-statistic):	0.00\
+Time:	17:05:00	Log-Likelihood:	-2.9773e+05\
+No. Observations:	21597	AIC:	5.955e+05\
+Df Residuals:	21588	BIC:	5.956e+05\
+Df Model:	8		\
+Covariance Type:	nonrobust		\
+coef	std err	t	P>|t|	[0.025	0.975]\
+Intercept	-7.24e+05	1.76e+04	-41.090	0.000	-7.59e+05	-6.9e+05\
+cond_ind	5.931e+04	2564.940	23.123	0.000	5.43e+04	6.43e+04\
+grade_ind	1.061e+05	2272.473	46.677	0.000	1.02e+05	1.11e+05\
+bedrooms	-3.866e+04	2201.663	-17.557	0.000	-4.3e+04	-3.43e+04\
+bathrooms	-1.156e+04	3525.074	-3.280	0.001	-1.85e+04	-4653.839\
+floors	-2.062e+04	3634.665	-5.674	0.000	-2.77e+04	-1.35e+04\
+wtf_bin	8.186e+05	1.97e+04	41.579	0.000	7.8e+05	8.57e+05\
+sqft_living	209.0878	3.498	59.766	0.000	202.231	215.945\
+sqft_lot	-0.3323	0.039	-8.417	0.000	-0.410	-0.255\
+Omnibus:	15280.876	Durbin-Watson:	1.981\
+Prob(Omnibus):	0.000	Jarque-Bera (JB):	794926.842\
+Skew:	2.837	Prob(JB):	0.00\
+Kurtosis:	32.175	Cond. No.	5.43e+05\
 
 
 
